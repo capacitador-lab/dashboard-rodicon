@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard de Capacitaciones</title>
-<style>
-
-body, html {
-margin: 0;
-padding: 0;
-width: 100%;
-height: 100%;
-overflow: hidden; 
-}
-iframe {
-border: none; 
-width: 100%;
-height: 100%;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Capacitaciones</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
 
+  <iframe 
+    id="mi-dashboard"
+    src="" 
+    title="Dashboard de Capacitaciones RODICON">
+  </iframe>
 
-<iframe
-src="https://script.google.com/macros/s/AKfycbx8gQXo4G594bemTmLI910E6Mc5ox_dCqxQp0KZnjIaUedgh6g1BoH1hpBlAPcMxvaU/exec"
-title="Dashboard de Capacitaciones RODICON">
-</iframe>
+  <script>
+    // Tu URL convertida a Base64 para que no se lea a simple vista
+    var codigoSecreto = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4OGdRWG80RzU5NGJlbVRtTEk5MTBFNk1jNW94X2RDcXhRcDBLWm5qSWFVZWRnaDZnMUJvSDFocEJsQVBjTXh2YVUvZXhlYw==";
+
+    // Cuando la página carga, decodificamos y asignamos la URL
+    window.onload = function() {
+      var urlReal = atob(codigoSecreto);
+      document.getElementById('mi-dashboard').src = urlReal;
+    };
+  </script>
 
 </body>
 </html>
