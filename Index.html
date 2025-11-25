@@ -28,10 +28,9 @@
   </iframe>
 
   <script>
-    // Tu URL convertida a Base64 para que no se lea a simple vista
+   
     var codigoSecreto = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4OGdRWG80RzU5NGJlbVRtTEk5MTBFNk1jNW94X2RDcXhRcDBLWm5qSWFVZWRnaDZnMUJvSDFocEJsQVBjTXh2YVUvZXhlYw==";
 
-    // Cuando la página carga, decodificamos y asignamos la URL
     window.onload = function() {
       var urlReal = atob(codigoSecreto);
       document.getElementById('mi-dashboard').src = urlReal;
@@ -40,3 +39,4 @@
 
 </body>
 </html>
+
