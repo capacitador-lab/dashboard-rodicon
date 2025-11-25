@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard de Capacitaciones</title>
   <style>
-    /* Este estilo hace que el iframe ocupe toda la pantalla sin bordes ni márgenes */
     body, html {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden; /* Evita que aparezcan dos barras de desplazamiento */
+      overflow: hidden;
     }
     iframe {
-      border: none; /* Quita el borde que los navegadores ponen por defecto a los iframes */
+      border: none;
       width: 100%;
       height: 100%;
     }
@@ -22,15 +21,16 @@
 </head>
 <body>
 
-  <!-- 
-    Este es el único elemento de la página. 
-    Carga tu aplicación de Google Apps Script y la muestra a pantalla completa.
-    Reemplaza la URL en el atributo 'src' si alguna vez cambia.
-  -->
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbx8gQXo4G594bemTmLI910E6Mc5ox_dCqxQp0KZnjIaUedgh6g1BoH1hpBlAPcMxvaU/exec"
-    title="Dashboard de Capacitaciones RODICON">
-  </iframe>
+<script>
+  
+  const p = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvc y9BS2Z5Y2J4OGdRWE80RzU5NGJlbVRtTEk5MTB FNk1jNW94X2RDcXhRcDBLWm5qSWF VZWRnaDZnMUJvSDFocEJsQVBjTXh2YVUvZXhlYw==";
+
+  const url = atob(p.replace(/\s/g, ""));
+  const ifr = document.createElement("iframe");
+  ifr.src = url;
+  ifr.title = "Dashboard de Capacitaciones RODICON";
+  document.body.appendChild(ifr);
+</script>
 
 </body>
 </html>
