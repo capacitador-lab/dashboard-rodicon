@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Capacitaciones</title>
+  <style>
+    /* Este estilo hace que el iframe ocupe toda la pantalla sin bordes ni márgenes */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Evita que aparezcan dos barras de desplazamiento */
+    }
+    iframe {
+      border: none; /* Quita el borde que los navegadores ponen por defecto a los iframes */
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    Este es el único elemento de la página. 
+    Carga tu aplicación de Google Apps Script y la muestra a pantalla completa.
+    Reemplaza la URL en el atributo 'src' si alguna vez cambia.
+  -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbx8gQXo4G594bemTmLI910E6Mc5ox_dCqxQp0KZnjIaUedgh6g1BoH1hpBlAPcMxvaU/exec"
+    title="Dashboard de Capacitaciones RODICON">
+  </iframe>
+
+</body>
+</html>
