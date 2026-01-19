@@ -28,19 +28,13 @@
   </iframe>
 
   <script>
-   
-    var codigoSecreto = "https://script.google.com/macros/s/AKfycbzApmoy5z4MyeZ8xDqZAx8uC45iHMX1qMlgk56QbdaCUUO9nrYMz7NPZ3Izp6JbOOvH/exec";
+    // Enlace directo (sin codificar)
+    var urlReal = "https://script.google.com/macros/s/AKfycbzApmoy5z4MyeZ8xDqZAx8uC45iHMX1qMlgk56QbdaCUUO9nrYMz7NPZ3Izp6JbOOvH/exec";
 
     window.onload = function() {
-      var urlReal = atob(codigoSecreto);
       document.getElementById('mi-dashboard').src = urlReal;
     };
   </script>
 
 </body>
 </html>
-
-
-
-
-
